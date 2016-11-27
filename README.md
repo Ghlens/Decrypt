@@ -2,4 +2,4 @@
 
 Simulates decrypting a text.
 
-Usage `python textGen.py "text"`
+Usage `python textDecrypt.py "text"`
