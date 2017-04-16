@@ -4,15 +4,15 @@ import sys
 
 
 def main():
-    inputString = sys.argv[1]
-    testString = list(inputString)
-    outputString = [''] * len(inputString)
+    input_string = sys.argv[1]
+    test_string = list(input_string)
+    output_string = [''] * len(input_string)
 
-    while testString != outputString:
-        for i in range(len(testString)):
-            if outputString[i] != testString[i]:
-                outputString[i] = chr(random.randint(32, 126))
-        sys.stdout.write('\r' + ''.join(outputString))
+    while test_string != output_string:
+        for i in range(len(test_string)):
+            if output_string[i] != test_string[i]:
+                output_string[i] = chr(random.randint(32, 126))
+        sys.stdout.write('\r' + ''.join(output_string))
         time.sleep(0.01)
         sys.stdout.flush()
 
