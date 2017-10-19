@@ -5,8 +5,12 @@ import sys
 
 def main():
     input_string = sys.argv[1]
-    test_string = list(input_string)
-    output_string = [''] * len(input_string)
+    decrypt(input_string)
+
+
+def decrypt(data):
+    test_string = list(data)
+    output_string = [''] * len(data)
 
     while test_string != output_string:
         for i in range(len(test_string)):
@@ -17,6 +21,7 @@ def main():
         sys.stdout.flush()
 
     sys.stdout.write('\n')
+
 
 if __name__ == '__main__':
     main()
