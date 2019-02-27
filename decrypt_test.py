@@ -8,7 +8,7 @@ class TestDecrypt(unittest.TestCase):
 
     def test_decrypt(self):
         res = decrypt("Everything is fine")
-        self.assertEqual(res, "Everything is fine")
+        self.assertEqual(''.join(res), "Everything is fine")
 
 if __name__ == '__main__':
     unittest.main()
