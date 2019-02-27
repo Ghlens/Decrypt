@@ -21,6 +21,7 @@ def decrypt(data):
         sys.stdout.flush()
 
     sys.stdout.write('\n')
+    return output_string
 
 
 if __name__ == '__main__':
